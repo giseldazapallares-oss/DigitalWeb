@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes">
+  <title>Gisel Daza | Belleza con Propósito</title>
+  <!-- Google Fonts + Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- SheetJS CDN -->
+  <script src="https://cdn.sheetjs.com/xlsx-0.20.2/package/dist/xlsx.full.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="loader" id="loader">
+  <div class="loader-content">
+    <img class="loader-logo" src="IMG/mujer.jpeg" alt="Logo">
+    <br>
+    <img src="IMG/logo-rem.png" alt="Logo">
+    <div class="hero-slogan">
+    <h1>
+    BELLEZA CON PROPÓSITO, CONFIANZA QUE SE REFLEJA
+    </h1>
+    </div>
+    <div class="loader-spinner"></div>
+  </div>
+</div>
+<div class="gold-particles" id="particlesContainer"></div>
+
+<header>
+  <div class="container header-flex">
+    <div class="logo-circle">
+      <div class="avatar-circle"></div>
+      <img class="logo-img-header" src="IMG/logo-rem.png" alt="Logo Gisel">
+    </div>
+    <div class="menu-icon" id="menuIcon"><i class="fas fa-bars"></i></div>
+    <div class="nav-links" id="navLinks">
+      <div class="close-menu" id="closeMenu"><i class="fas fa-times"></i></div>
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#galeria">Galería</a>
+      <a href="#videos">Videos</a>
+      <a href="#testimonios">Testimonios</a>
+      <a href="#agendar">Agendar</a>
+      <button class="nav-admin-link" id="adminMenuBtn">Administrador</button>
+    </div>
+  </div>
+</header>
+
+<a href="https://wa.me/573004615549?text=Hola%20Gisel%2C%20quiero%20agendar%20mi%20cita%20de%20belleza" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+<main class="container">
+  <!-- Hero con logo, perfil de mujer planchando cabello y eslogan -->
+  <section id="inicio" class="hero">
+    
+    <div class="hero-slogan"><h1>Belleza con propósito, confianza que se refleja</h1></div>
+    <p>Aquí tu belleza, nuestra pasión</p>
+    <p style="font-size:1rem; font-weight:300;">Profesionalismo que se ve, talento que se siente</p>
+    
+    <div class="btn-group">
+      <button class="btn-gold" id="scrollToAgendar">Agendar cita</button>
+      <button class="btn-outline" id="scrollToGaleria">Ver catálogo</button>
+    </div>
+  </section>
+
+  <div class="benefits" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin: 1rem 0;">
+    <span><i class="fas fa-check-circle" style="color:#d4af37"></i> Técnicas actualizadas</span>
+    <span><i class="fas fa-check-circle" style="color:#d4af37"></i> Productos de calidad</span>
+    <span><i class="fas fa-check-circle" style="color:#d4af37"></i> Atención personalizada</span>
+    <span><i class="fas fa-check-circle" style="color:#d4af37"></i> Resultados que enamoran</span>
+    <span><i class="fas fa-check-circle" style="color:#d4af37"></i> Manejo de Bioseguridad</span>
+  </div>
+
+  <section id="servicios">
+    <h2 class="section-title">Nuestros Servicios</h2>
+    <div class="services-grid">
+      <div class="service-card"><i class="fas fa-hand-sparkles"></i><h4>Manicura Tradicional</h4><p>Económica y elegante</p></div>
+      <div class="service-card"><i class="fas fa-gem"></i><h4>Uñas Semipermanentes</h4><p>Durabilidad y brillo</p></div>
+      <div class="service-card"><i class="fas fa-brush"></i><h4>Diseño de uñas</h4><p>Arte único</p></div>
+      <div class="service-card"><i class="fas fa-leaf"></i><h4>Bioseguridad</h4><p>Esterilización total</p></div>
+      <div class="service-card"><i class="fas fa-spa"></i><h4>Planchado de Cabello</h4><p>Liso perfecto</p></div>
+      <div class="service-card"><i class="fas fa-crown"></i><h4>Decoración Premium</h4><p>Detalles que enamoran</p></div>
+    </div>
+ 
+  <section id="galeria">
+    <h2 class="section-title">Nuestro Catálogo</h2>
+    <div class="filter-buttons" id="filterButtons"></div>
+    <div class="gallery" id="galleryContainer"></div>
+  </section>
+
+    <div class="carrusel">
+      <div class="wrapper">
+        <div class="caja-imagen"><img src="IMG/UÑAS/FLOREZ.jpeg" alt="Imagen 1"></div>
+        <div class="caja-imagen"><img src="IMG/UÑAS/INVERTIDA.webp" alt="Imagen 2"></div>
+        <div class="caja-imagen"><img src="IMG/UÑAS/MATE.jpg" alt="Imagen 3"></div>
+        <div class="caja-imagen"><img src="IMG/UÑAS/METAM.png" alt="Imagen 1"></div>
+        <div class="caja-imagen"><img src="IMG/UÑAS/mora3.png" alt="Imagen 2"></div>
+        <div class="caja-imagen"><img src="IMG/UÑAS/NUDE.jpg" alt="Imagen 3"></div>
+        <div class="caja-imagen"><img src="IMG/UÑAS/perla.jpg" alt="Imagen 1"></div>
+        <div class="caja-imagen"><img src="IMG/UÑAS/UÑA (1).jpeg" alt="Imagen 2"></div>
+        <div class="caja-imagen"><img src="IMG/UÑAS/UÑA (2).jpeg" alt="Imagen 3"></div>
+
+        <div class="caja-imagen"><img src="IMG/UÑAS/FLOREZ.jpeg" area-hidden="true"></div>
+        <div class="caja-imagen"><img src="IMG/UÑAS/INVERTIDA.webp" area-hidden="true"></div>
+        <div class="caja-imagen"><img src="IMG/UÑAS/MATE.jpg" area-hidden="true"></div>
+        <div class="caja-imagen"><img src="IMG/UÑAS/METAM.png" area-hidden="true"></div>
+        <div class="caja-imagen"><img src="IMG/UÑAS/mora3.png" area-hidden="true"></div>
+        <div class="caja-imagen"><img src="IMG/UÑAS/NUDE.jpg" area-hidden="true"></div>
+        <div class="caja-imagen"><img src="IMG/UÑAS/perla.jpg" area-hidden="true"></div>
+        <div class="caja-imagen"><img src="IMG/UÑAS/UÑA (1).jpeg" area-hidden="true"></div>
+        <div class="caja-imagen"><img src="IMG/UÑAS/UÑA (2).jpeg" area-hidden="true"></div>
+
+      </div>
+    </div>
+
+   
+
+  
+
+  <section id="testimonios">
+    <h2 class="section-title">Clientas felices</h2>
+    <div class="testimonial-slider">
+      <div class="testimonial-track" id="testimonialTrack"></div>
+      <div style="text-align:center; margin-top:1rem;" id="dotsContainer"></div>
+    </div>
+  </section>
+
+  <section id="agendar">
+    <h2 class="section-title">Reserva tu cita</h2>
+    <div class="booking-form">
+      <form id="citaForm">
+        <div class="form-grid">
+          <input type="text" id="nombre" placeholder="Nombre completo" required>
+          <input type="tel" id="celular" placeholder="Celular" required>
+          <input type="text" id="direccion" placeholder="Dirección">
+          <input type="text" id="barrio" placeholder="Barrio">
+          <select id="servicioSelect" required>
+            <option value="">Selecciona servicio</option>
+            <option>Manicura tradicional</option><option>Uñas semipermanentes</option><option>Planchado de cabello</option>
+            <option>Diseño de uñas</option><option>Decoración premium</option>
+          </select>
+          <input type="date" id="fecha" required>
+          <input type="time" id="hora" required>
+          <select id="pago"><option>Efectivo</option><option>Nequi</option><option>Daviplata</option><option>Transferencia por Llave</option></select>
+          <textarea id="comentarios" placeholder="Comentarios adicionales"></textarea>
+          <div class="prepayment-info"><i class="fas fa-info-circle"></i> Los domicilios tienen un recargo</i><br>
+            <i> Para confirmar tu cita debes realizar un anticipo de $10.000</i>
+          <br>
+        </div>
+          <button type="submit" class="btn-gold">Agendar cita</button>
+        </div>
+      </form>
+    </div>
+    <div class="admin-section">
+      <div id="adminPanel" style="display:none; margin-top: 1rem;">
+        <button id="exportExcelBtn" class="btn-gold" style="margin-bottom: 10px;"><i class="fas fa-file-excel"></i> Descargar Excel</button>
+        <div class="citas-table"><table id="citasTable"><thead><tr><th>Nombre</th><th>Celular</th><th>Servicio</th><th>Fecha</th><th>Hora</th><th>Acciones</th></tr></thead><tbody id="citasTbody"></tbody></table></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <img class="logo-img-header" src="IMG/logo-rem.png" alt="Logo">
+  <div class="social-icons">
+    <a href="https://wa.me/573004615549" style="color:inherit;"><i class="fab fa-whatsapp"></i></a>
+    <i class="fab fa-instagram"></i><i class="fab fa-facebook"></i>
+  </div>
+  <p style="margin: 1rem 0;">Gisel Daza - Belleza con propósito, confianza que se refleja</p>
+  <p><i class="fas fa-quote-left"></i> Tu tiempo, mi compromiso. Tu belleza, mi inspiración.</p>
+  <p style="font-size: 0.8rem;">© 2022 Todos los derechos reservados</p>
+</footer>
+
+<div id="imageModal" class="modal"><span class="close-modal">&times;</span><img class="modal-content" id="modalImg"></div>
+<script src="javascript.js"></script>
+</body>
+</html>
