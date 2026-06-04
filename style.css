@@ -133,7 +133,7 @@
       border-radius: 50%;
       border: 2px solid #d4af37;
       box-shadow: 0 0 12px rgba(212, 175, 55, 0.6);
-      background: url('img/mujer.jpeg') center/cover;
+      background-image: url('img/mujer.jpeg') center/cover;
     }
     .logo-img-header {
       height: 100px;
